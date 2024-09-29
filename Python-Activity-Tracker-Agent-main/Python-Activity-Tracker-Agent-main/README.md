@@ -2,6 +2,13 @@ Activity Tracker Agent
 Overview
 The Activity Tracker Agent is a Python-based program that runs in the background on a user's machine to track system activity. It captures screenshots at configurable intervals, tracks user inputs, and uploads activity data to AWS S3. It also monitors timezone changes and handles other configurable options such as blurring screenshots.
 
+
+Group Members
+Shubham Kumar Upadhyay
+Saurav Kumar
+
+
+
 Features
 Activity Tracking: Detect genuine user inputs and discard scripted activities (e.g., irregular mouse movement or unnatural keyboard inputs).
 Configurable Screenshot Intervals: Screenshots can be taken at configurable intervals (e.g., every 5 or 10 minutes). Users can enable/disable screenshots and toggle between blurred/unblurred captures.

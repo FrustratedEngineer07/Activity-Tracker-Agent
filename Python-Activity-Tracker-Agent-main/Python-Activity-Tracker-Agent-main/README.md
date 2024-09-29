@@ -1,22 +1,29 @@
-Activity Tracker Agent
+<b>Activity Tracker Agent</b>
+
 Overview
+
 The Activity Tracker Agent is a Python-based program that runs in the background on a user's machine to track system activity. It captures screenshots at configurable intervals, tracks user inputs, and uploads activity data to AWS S3. It also monitors timezone changes and handles other configurable options such as blurring screenshots.
 
 
 <b>Group Members:  </b>                                                                                                                                                                                  
-Shubham Kumar Upadhyay                                                                                                                                                                             
-Saurav Kumar
+<b>Shubham Kumar Upadhyay</b>                                                                                                                                                                             
+<b>Saurav Kumar</b>
 
 
 
-Features
-Activity Tracking: Detect genuine user inputs and discard scripted activities (e.g., irregular mouse movement or unnatural keyboard inputs).
+<b>Features</b>
+
+Activity Tracking: 
+
+Detect genuine user inputs and discard scripted activities (e.g., irregular mouse movement or unnatural keyboard inputs).
 Configurable Screenshot Intervals: Screenshots can be taken at configurable intervals (e.g., every 5 or 10 minutes). Users can enable/disable screenshots and toggle between blurred/unblurred captures.
 Time Zone Management: Detects timezone changes and updates logs accordingly.
 Cloud Data Upload: Automatically uploads screenshots and activity logs to AWS S3 with compression and encryption.
 Error Handling and Resilience: Robust error handling for scenarios like no internet connection, abrupt disconnection, or firewall restrictions.
 Instance Management: Prevents multiple instances of the agent from running simultaneously using a lock file.
+
 Libraries Used
+
 The following libraries are required to run the Activity Tracker Agent:
 
 Pillow: For taking screenshots and image processing (blurring, compression).
